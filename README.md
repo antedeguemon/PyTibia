@@ -11,7 +11,7 @@ It is based on [TibiaAPI](https://code.google.com/p/tibiaapi/) and [ArrowBot](ht
 * Auto cure to poison and paralysis
 
 ### Thanks to:
-* [Arrowmaster](http://sourceforge.net/projects/arrowbot/).
+* [Arrowmaster](http://sourceforge.net/projects/arrowbot/)
 * [TibiaAPI](https://code.google.com/p/tibiaapi/)
 * [NeoClone](https://github.com/NeoClone/NeoClone)
 * [NeutralBot](http://neutralbot.tk)
