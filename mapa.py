@@ -9,12 +9,10 @@ class mapa:
 	def __init__(self, pid):
 		self.window = window(pid)
 	def zoom(self, num):
-		# zoom addr is fucking hard to get, so...
 		for i in range(3):
 			self.window.mouse_click((int(self.window.get_size()[0]) - ZOOM_OFFSET_X), ZOOM_OFFSET_Y[0])
 		for i in range(num):
 			self.window.mouse_click((int(self.window.get_size()[0]) - ZOOM_OFFSET_X), ZOOM_OFFSET_Y[1])
-		#sleep(1)
 	def center(self):
 		return [(int(self.window.get_size()[0]) - MAP_CENTER_X), 79]
 
