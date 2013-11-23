@@ -7,7 +7,7 @@ import time
 BATTLE_OCR_START = '60,60,60;57,57,57;163,163,163;147,147,147;59,59,59;67,67,67;173,173,146;182,172,99;158,135,39;69,65,56;61,61,61;45,45,45;'
 BATTLE_OCR_END = '24,24,24;57,58,58;75,76,76;55,55,55;53,54,53;41,41,41;40,40,40;120,120,120;'
 BORDER_SIZE = 1
-MIN_BATTLE_SIZE = 64  # uma cara embriagada no espelho no banheiro...
+MIN_BATTLE_SIZE = 64  
 BATTLE_BORDER = 11
 
 class battle:
@@ -22,8 +22,7 @@ class battle:
 		if int(self.window.is_maximized()) < 1:
 			WINDOW_STATUS = 0
 		
-		# dumb as fuck
-		battle_start_x = int(size[0])-(164-(BORDER_SIZE*WINDOW_STATUS))	 # can i haz mathmagic?
+		battle_start_x = int(size[0])-(164-(BORDER_SIZE*WINDOW_STATUS))	
 		battle_end_x = int(size[0])-(164-(BORDER_SIZE*WINDOW_STATUS))
 		battle_start_y = 0
 		battle_end_y = 0
@@ -39,7 +38,6 @@ class battle:
 			if BATTLE_OCR_END in battle_start[1]:
 				block_size = len(battle_start[1].split(BATTLE_OCR_END)[0].split(';'))
 				battle_end_y = block_size + battle_start_y
-			#block_size try
 			try:
 				if block_size < MIN_BATTLE_SIZE:
 					block_size = (MIN_BATTLE_SIZE+5) - block_size 
