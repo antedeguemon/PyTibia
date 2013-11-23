@@ -17,8 +17,6 @@ class mapa:
 		return [(int(self.window.get_size()[0]) - MAP_CENTER_X), 79]
 
 	def walk(self, now, goto):
-		x = (now[0]-goto[0])
-		y = (now[1]-goto[1])
-		y = self.center()[1] - y
-		x = self.center()[0] - x
+		y = self.center()[1] - (now[1]-goto[1])
+		x = self.center()[0] - (now[0]-goto[0])
 		self.window.mouse_click(x, y)
