@@ -1,7 +1,6 @@
 from pytibia.tibia import Tibia
 from pytibia.battle import battle
 from pytibia.player import player
-from pytibia.mapa import mapa
 import time
 
 tibia = Tibia()
