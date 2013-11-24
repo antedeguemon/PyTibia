@@ -33,6 +33,9 @@ class window:
         def mouse_down(self, x, y, x_resize, y_resize):
                 subprocess.Popen(['xdotool', 'mousemove', str(x), str(y), 'mousedown', '--window', self.window, '1', 'mousemove', str(x_resize), str(y_resize), 'mouseup', '--window', self.window, '1'], stdout=subprocess.PIPE).communicate()
 	
+	def send_text(self, spell):
+		subprocess.Popen(['xdotool', '--window', '--window', self.window, '1', 'xdotool', 'type', str(spell), 'key', 'return'], stdout=subprocess.PIPE).communicate()
+		
 	def get_title(self):
 		pids = subprocess.Popen(['wmctrl', '-l', '-p', '-G'], stdout=subprocess.PIPE).communicate()[0].split("\n")
 		for pid in pids:
