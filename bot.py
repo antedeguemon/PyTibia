@@ -1,13 +1,13 @@
-from player import player
-from tibia import Tibia
-from mapa import mapa
+from pytibia.tibia import Tibia
+from pytibia.battle import battle
+from pytibia.player import player
+from pytibia.mapa import mapa
 import time
-from  battle import battle
 
-game = Tibia()
-player = player(game)
-battle = battle(game)
-mapa = mapa(game)
+tibia = Tibia()
+player = player(tibia)
+battle = battle(tibia)
+mapa = mapa(tibia)
 
 waypoint = [[32370, 32213, 8], [32362, 32214, 8], [32350, 32214, 8], [32340, 32215, 8], [32331, 32215, 8], [32328, 32222, 8], [32328, 32227, 8], [32339, 32227, 8], [32339, 32238, 8], [32339, 32252, 8], [32356, 32251, 8], [32367, 32245, 8], [32369, 32239, 8], [32368, 32224, 8], [32368, 32214, 8]]
 
