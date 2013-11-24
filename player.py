@@ -26,7 +26,7 @@ MOUNT_ID = '8460f18'
 #xdotool mousemove $1 $2 click --window $tibia_window $3 mousemove restore; }
 
 
-class Player:
+class player:
 	def __init__(self, pid):
 		self.memory = memory(pid)
 

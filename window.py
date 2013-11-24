@@ -27,7 +27,8 @@ class window:
 
 
 	def mouse_click(self, x, y):
-		subprocess.Popen(['xdotool', 'mousemove', str(x), str(y), 'click', '--window', self.window, '1'], stdout=subprocess.PIPE).communicate()
+		# mousemove restore
+		subprocess.Popen(['xdotool', 'mousemove', str(x), str(y), 'click', '--window', self.window, '1', 'mousemove', 'restore'], stdout=subprocess.PIPE).communicate()
 	
         def mouse_down(self, x, y, x_resize, y_resize):
                 subprocess.Popen(['xdotool', 'mousemove', str(x), str(y), 'mousedown', '--window', self.window, '1', 'mousemove', str(x_resize), str(y_resize), 'mouseup', '--window', self.window, '1'], stdout=subprocess.PIPE).communicate()
