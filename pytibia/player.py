@@ -1,30 +1,22 @@
 from memory import memory
 from operator import xor
 
+# player stats
 XOR_ADDR = '84a2cc8'
 HP_ADDR = '849d870'	
 MAX_HP_ADDR = '849d874'
 MP_ADDR = '84a2c8c'
 MAX_MP_ADDR = '84a2c88'
-#GOTO_Y = '849d864'
+
+# player location
 NOW_Y = '84a24e0' # +4 bytes
 NOW_X = '84a24e4'
 NOW_Z = '84a24e8' # NOW_Y + 8 bytes
-#MAP_ZOOM = '9c9bdec'
-#MOUNT = ''
+
+# client addrs
 FLAGS = '84a2cbf'
 DIALOG = '85f5190'
-
 MOUNT_ID = '8460f18'
-
-# ukeda5uc
-#function mouse_move(){
-#xdotool mousemove $1 $2; }
-
-#function mouse_click(){
-#tibia_window=`xdotool search --name "Tibia Player"`
-#xdotool mousemove $1 $2 click --window $tibia_window $3 mousemove restore; }
-
 
 class player:
 	def __init__(self, pid):
