@@ -1,6 +1,7 @@
 from window import window
 from tibia import Tibia
 from time import sleep
+
 ZOOM_OFFSET_Y = [80, 100]
 ZOOM_OFFSET_X = 40
 MAP_CENTER_X = 112
