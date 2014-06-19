@@ -21,4 +21,4 @@ Run install.sh script with sudo.
 
 Usage
 ------------
-Just look some examples scripts in this repository.
+Just check the examples folder.
