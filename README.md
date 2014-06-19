@@ -17,5 +17,8 @@ In order to use all PyTibia functions, you will need to have [gcc](https://gcc.g
 `sudo apt-get install gcc wmctrl xdotool`
 
 Run install.sh script with sudo.
-
 `sudo ./install.sh`
+
+Usage
+------------
+Just look some examples scripts in this repository.
