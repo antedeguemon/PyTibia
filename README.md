@@ -1,6 +1,6 @@
 PyTibia
 =======
-PyTibia is a [TibiaAPI](https://code.google.com/p/tibiaapi/)-like written in python for GNU/Linux that allows you to control your Tibia character through python scripts.
+PyTibia is a [TibiaAPI](https://code.google.com/p/tibiaapi/)-like written in python for GNU/Linux that allows you to control your Tibia 10.10 character through python scripts.
 
 Requeriments
 ------------
