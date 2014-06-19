@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import subprocess 
 import binascii
 class memory:

@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from memory import memory
 
 HK_F1 = '85f43e0'

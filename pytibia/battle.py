@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from window import window
 from PIL import Image
 import pygame

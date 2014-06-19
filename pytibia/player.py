@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from memory import memory
 from operator import xor
 

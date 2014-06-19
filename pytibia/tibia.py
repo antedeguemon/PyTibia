@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import subprocess
 class Tibia:
 	def __init__(self, client = 0, pid = 0):
